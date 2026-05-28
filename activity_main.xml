@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="25dp"
+    android:background="#1A237E"
+    tools:context=".MainActivity">
+
+    <!-- Logo/Icono del juego -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="⚡❓"
+        android:textSize="80sp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Título principal -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Juego de Memorama"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="5dp" />
+
+    <!-- Subtítulo -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Encuentra los pares lo mas rapido posible y gana el juego"
+        android:textSize="16sp"
+        android:textColor="#BBDEFB"
+        android:layout_marginBottom="50dp"
+        android:gravity="center" />
+
+    <!-- Contenedor de botones con mejor diseño -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:padding="20dp"
+        android:elevation="8dp"
+        android:backgroundTint="#FFFFFF"
+        android:layout_marginBottom="30dp">
+
+        <!-- Botón Comenzar Juego -->
+        <Button
+            android:id="@+id/btnComenzar"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="🎮 Comenzar Juego"
+            android:textSize="18sp"
+            android:backgroundTint="#4CAF50"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            android:drawablePadding="10dp" />
+
+        <!-- Botón Créditos -->
+        <Button
+            android:id="@+id/btnCreditos"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="👥 Créditos"
+            android:textSize="18sp"
+            android:backgroundTint="#2196F3"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:layout_marginBottom="15dp"
+            android:drawablePadding="10dp" />
+
+        <!-- Botón Salir -->
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:text="🚪 Salir"
+            android:textSize="18sp"
+            android:backgroundTint="#F44336"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold"
+            android:drawablePadding="10dp" />
+
+    </LinearLayout>
+
+    <!-- Información adicional -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="tiempo limite 60 segundo"
+        android:textSize="14sp"
+        android:textColor="#E3F2FD"
+        android:gravity="center"
+        android:padding="10dp" />
+
+</LinearLayout>

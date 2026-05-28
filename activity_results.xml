@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="20dp"
+    android:background="#4CAF50"
+    tools:context=".ResultsActivity">
+
+    <!-- Icono de resultado -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="🏆"
+        android:textSize="80sp"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Título -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Juego Terminado!"
+        android:textSize="28sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Puntuación -->
+    <TextView
+        android:id="@+id/txtPuntuacionFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pares encontrados: 0"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Estadísticas -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#1976D2"
+        android:padding="15dp"
+        android:layout_marginBottom="30dp"
+        android:elevation="8dp">
+
+        <TextView
+            android:id="@+id/txtTotalBotones"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Total de botones: 0"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:id="@+id/txtAciertos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pares conseguidos: 0"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:id="@+id/txtFallos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pares que no fueron enconttrados: 0"
+            android:textSize="16sp"
+            android:textColor="#FFFFFF" />
+
+    </LinearLayout>
+
+    <!-- Mensaje según puntuación -->
+    <TextView
+        android:id="@+id/txtMensajeFinal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¡Buen trabajo!"
+        android:textSize="20sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="40dp" />
+
+    <!-- Botón Jugar de Nuevo -->
+    <Button
+        android:id="@+id/btnJugarNuevo"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Jugar de Nuevo"
+        android:textSize="18sp"
+        android:backgroundTint="#2196F3"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="20dp" />
+
+    <!-- Botón Menú Principal -->
+    <Button
+        android:id="@+id/btnMenuPrincipal"
+        android:layout_width="250dp"
+        android:layout_height="60dp"
+        android:text="Menú Principal"
+        android:textSize="18sp"
+        android:backgroundTint="#FF9800"
+        android:textColor="#FFFFFF" />
+
+</LinearLayout>
